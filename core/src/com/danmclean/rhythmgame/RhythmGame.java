@@ -16,39 +16,40 @@ public class RhythmGame extends ApplicationAdapter {
 	Light light3;
 	Light light4;
 
+
+	LightManager lightManager;
+
 	@Override
 	public void create () {
+
+
+		InputSystem input = new InputSystem();
+
+
+		Gdx.input.setInputProcessor(input);
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
 		conductor = new Conductor();
 		Music song = conductor.playSong("dreamland.mp3");
 
+		lightManager = new LightManager();
 		MakeLights();
 
+		input.setLights(lightManager);
 		song.play();
 	}
 
 	private void MakeLights() {
 
-
-
-		light1 = new Light();
-		light1.setConductor(conductor);
-
-		light2 = new Light();
-		light2.setConductor(conductor);
-		light2.beatNumber = 18;
+		LightFactory.setBPM(93.39f);
+		LightFactory.setConductor(conductor);
+		lightManager.AddLight(LightFactory.MakeLight(9));
+		lightManager.AddLight(LightFactory.MakeLight(18));
+		lightManager.AddLight(LightFactory.MakeLight(27));
+		lightManager.AddLight(LightFactory.MakeLight(36));
 
 
 
-		light3 = new Light();
-		light3.setConductor(conductor);
-		light3.beatNumber = 36;
-
-
-		light4 = new Light();
-		light4.setConductor(conductor);
-		light4.beatNumber = 64;
 
 	}
 
@@ -61,17 +62,11 @@ public class RhythmGame extends ApplicationAdapter {
 	private void Draw() {
 		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		light1.Draw(batch);
-		light2.Draw(batch);
-		light3.Draw(batch);
-		light4.Draw(batch);
+		lightManager.Draw(batch);
 	}
 
 	private void Update()
 	{
-		light1.Update(0.16f);
-		light2.Update(0.16f);
-		light3.Update(0.16f);
-		light4.Update(0.16f);
+		lightManager.Update(0.16f);
 	}
 }
