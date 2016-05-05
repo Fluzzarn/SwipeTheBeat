@@ -4,6 +4,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.ColorInfluencer;
+import com.badlogic.gdx.math.RandomXS128;
+
+import java.util.Random;
 
 /**
  * Created by Dan on 4/18/2016.
@@ -34,18 +38,45 @@ public class Light  {
     private float targetX;
     private float targetY;
 
+    public static final int MAX_COLS = 5;
 
+    private int column;
 
     private Boolean isBeingDragged = false;
 
     private float earliest , latest;
+    private float latestX,latestY,earliestX,earliestY;
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
+    }
+
+    private Boolean isActive;
+
+
+    public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
     public Light() {
         init();
     }
 
     public Light(float BPM)
     {
+        isActive = true;
         bpm = BPM;
+        latest = 1;
+        earliest = 1;
+
         init();
     }
 
@@ -57,11 +88,18 @@ public class Light  {
 
 
 
-        Texture lightOnText = TextureHolder.LookupTexture("lightOn.png");
-        Texture lightOffText = TextureHolder.LookupTexture(("lightOff.png"));
+        Texture lightOnText = TextureHolder.LookupTexture("starNoteOn.png");
+        Texture lightOffText = TextureHolder.LookupTexture(("starNote.png"));
         lightOn = new Sprite(lightOnText);
         lightOff = new Sprite(lightOffText);
         isOn = false;
+        isActive = true;
+
+        //Latest is relative
+        latestY = (Gdx.graphics.getHeight() / 2) - (beatNumber * crotchet * noteSpeed + latest * crotchet * noteSpeed);
+        earliestY = (Gdx.graphics.getHeight() / 2) - (beatNumber * crotchet * noteSpeed - earliest * crotchet * noteSpeed);
+
+        posY = (Gdx.graphics.getHeight() / 2) -  beatNumber * crotchet * noteSpeed;
     }
 
 
@@ -76,18 +114,30 @@ public class Light  {
 
     public void Update(float deltaTime)
     {
-        if(conductor.getSongPosition() > beatNumber * crotchet)
-        {
-            //Do things on beat
-            isOn = true;
-        }
+
 
         if(!isBeingDragged)
         {
-            targetX = 0;
+            targetX = column * Gdx.graphics.getWidth() / MAX_COLS;
             targetY = (Gdx.graphics.getHeight() / 2) -  (conductor.getSongPosition() - beatNumber * crotchet) * noteSpeed;
+            if(conductor.getSongPosition() > beatNumber * crotchet)
+            {
+                //Do things on beat
+                isOn = true;
+            }
+            if(posY < latestY)
+            {
+                Die();
+
+            }
         }
             lerpToPos(targetX,targetY,posX,posY,deltaTime);
+
+    }
+
+    private void Die()
+    {
+        isActive = false;
 
     }
 
@@ -176,5 +226,22 @@ public class Light  {
     public float getHeight()
     {
         return lightOff.getHeight();
+    }
+
+    public float GetLeftMost() {
+
+        return posX - lightOff.getWidth() / 2.0f;
+    }
+    public float GetRightMost() {
+
+        return posX + lightOff.getWidth() / 2.0f;
+    }
+    public float GetUpMost() {
+
+        return posY + lightOff.getHeight() / 2.0f;
+    }
+    public float GetDownMost() {
+
+        return posY - lightOff.getHeight() / 2.0f;
     }
 }

@@ -33,12 +33,39 @@ public class LightManager {
     }
 
 
-    public void Update(float dt)
+    public void Update(float dt, RhythmGame game)
     {
         for (Light l:Lights)
         {
             l.Update(Gdx.graphics.getDeltaTime());
+            if(game.noteBucket.CheckForIntersect(l))
+            {
+                if(l.isOn)
+                {
+                    game.score += 500;
+                    l.setActive(false);
+                }
+            }
         }
+
+         CleanUp(game);
+    }
+
+    private void CleanUp(RhythmGame game)
+    {
+        Boolean removed = false;
+        for(Light l:Lights)
+        {
+            if(!l.getActive())
+            {
+
+                removed= true;
+                Lights.remove(l);
+                break;
+            }
+        }
+        if(removed)
+            CleanUp(game);
     }
 
     public void Draw(SpriteBatch batch)
