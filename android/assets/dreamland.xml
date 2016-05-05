@@ -1,0 +1,401 @@
+<song>
+	<BPM BPM="93.333" />
+	<notes>
+		<note>
+			<column col="0" />
+			<beat beat="3" />
+		</note>
+	<note>
+	<column col="2" />
+	<beat beat="5" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="9" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="11" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="14" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="17" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="21" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="24" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="26" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="30" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="32" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="36" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="39" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="42" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="44" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="48" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="51" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="54" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="57" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="59" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="62" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="65" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="69" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="72" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="75" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="77" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="81" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="84" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="87" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="89" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="93" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="96" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="98" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="102" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="105" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="107" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="110" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="113" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="117" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="119" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="122" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="125" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="128" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="132" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="134" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="138" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="141" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="143" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="146" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="150" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="152" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="155" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="159" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="161" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="165" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="168" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="170" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="173" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="176" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="180" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="183" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="185" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="188" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="191" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="195" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="197" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="201" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="203" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="207" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="210" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="213" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="216" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="219" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="222" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="224" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="227" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="230" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="234" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="236" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="239" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="243" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="246" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="248" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="252" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="255" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="257" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="260" />
+	</note>
+	<note>
+	<column col="1" />
+	<beat beat="264" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="266" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="269" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="273" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="275" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="279" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="282" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="284" />
+	</note>
+	<note>
+	<column col="3" />
+	<beat beat="287" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="291" />
+	</note>
+	<note>
+	<column col="2" />
+	<beat beat="294" />
+	</note>
+	<note>
+	<column col="0" />
+	<beat beat="297" />
+	</note>
+	</notes>
+	</song>
